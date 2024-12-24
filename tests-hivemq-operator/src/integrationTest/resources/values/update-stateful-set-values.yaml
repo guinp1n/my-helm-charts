@@ -1,0 +1,16 @@
+# Custom images Single node cluster with external mqtt port
+operator:
+  image: hivemq/hivemq-operator:snapshot
+  imagePullPolicy: Never
+  logLevel: INFO
+  admissionWebhooks:
+    enabled: false
+
+hivemq:
+  image: hivemq/hivemq4:k8s-4.35.0
+  imagePullPolicy: Never
+  initDnsWaitImage: hivemq/init-dns-wait:snapshot
+  logLevel: DEBUG
+  nodeCount: 2
+  cpu: 512m
+  controllerTemplate: cluster-stateful-set.yaml

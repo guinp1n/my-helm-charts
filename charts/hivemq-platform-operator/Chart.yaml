@@ -1,0 +1,23 @@
+apiVersion: v2
+name: hivemq-platform-operator
+description: HiveMQ Platform Operator Helm Chart (new)
+type: application
+version: 0.2.14
+appVersion: 1.6.2
+maintainers:
+  - email: support@hivemq.com
+    name: HiveMQ
+keywords:
+  - HiveMQ
+  - HiveMQ Platform Operator
+  - Operator
+  - MQTT
+  - IoT
+  - Java
+  - distributed
+  - messaging
+icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
+annotations:
+  artifacthub.io/signKey: |
+    fingerprint: 62EA05AEB2030F932532F8D96B695D55352A7E7D
+    url: https://www.hivemq.com/public.pgp
