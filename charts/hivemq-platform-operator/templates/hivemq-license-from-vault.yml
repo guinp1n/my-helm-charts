@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
-  name: hivemq-license-from-the-vault-rendered-by-argo-cd
+  name: secret-for-the-argocd-vault-plugin
   annotations:
     avp.kubernetes.io/path: "secret/data/hivemq/license"
 stringData:
