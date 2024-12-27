@@ -101,9 +101,6 @@ Usage: {{ include "hivemq-platform.has-additional-volume-mounts" . }}
   {{- if or (not (hasKey $additionalVolume "containerName")) ( and (hasKey $additionalVolume "containerName") (eq $additionalVolume.containerName "hivemq")) }}
     {{- $hasAdditionalVolumeMount = true }}  # Set the flag when the condition is met
   {{- end }}
-  {{- if $hasAdditionalVolumeMount }}  # Stop iterating once the flag is true
-    {{- break }}  # (This line is still a "logical" break, not using an actual 'break' function)
-  {{- end }}
 {{- end -}}
 {{- $hasAdditionalVolumeMount }}
 {{- end -}}
