@@ -208,7 +208,7 @@ Usage: {{ include "hivemq-platform.has-service-type" (dict "services" .Values.se
 {{- range $service := $services }}
   {{- if and ($service.exposed) (eq $service.type $expectedType) }}
     {{- $typeExists = true }}
-    {{- break }}
+
   {{- end }}
 {{- end }}
 {{- $typeExists }}
