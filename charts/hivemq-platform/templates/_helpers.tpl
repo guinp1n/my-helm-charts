@@ -229,7 +229,7 @@ Usage: {{ include "hivemq-platform.has-default-metrics-service" . }}
 {{- range $service := .Values.services }}
   {{- if and (eq $service.type "metrics") (eq (int64 $service.containerPort) (int64 $metricsPort)) }}
     {{- $metricsServiceExists = true }}
-    {{- break }}
+
   {{- end }}
 {{- end }}
 {{- $metricsServiceExists }}
@@ -471,7 +471,7 @@ Usage: {{ include "hivemq-platform.validate-metrics-services" . }}
 {{- range $service := $services }}
   {{- if and (eq $service.type "metrics") ($service.exposed) (not (eq (int64 $service.containerPort) (int64 $metricsPort))) }}
     {{- fail (printf "\nService type `metrics` with container port `%d` cannot be different than the metrics port `%d` defined for the HiveMQ Prometheus extension value as `metrics.port`" (int64 $service.containerPort) (int64 $metricsPort)) }}
-    {{- break }}
+
   {{- end }}
 {{- end }}
 {{- end -}}
@@ -698,7 +698,7 @@ Check if there are services exposed with keystore
 {{- range $key, $val := .Values.services }}
     {{- if and $val.exposed $val.keystoreSecretName }}
         {{- printf "found" }}
-        {{- break }}
+
     {{- end }}
 {{- end -}}
 {{- end -}}
@@ -1044,7 +1044,7 @@ Usage: {{- include "hivemq-platform.metrics-container-port-name" . -}}
     {{- range $service := .Values.services }}
       {{- if and (eq $service.type "metrics") (eq (int64 $service.containerPort) (int64 $metricsPort)) }}
         {{- $metricsPortName = printf "%s" $service.legacyPortName }}
-        {{- break }}
+
       {{- end }}
     {{- end }}
 {{- end -}}
