@@ -97,12 +97,12 @@ restApi:
 # Configures all HiveMQ licenses.
 license:
   # Creates a Kubernetes Secret for the configured HiveMQ licenses.
-  create: false
+  create: true
   # The name of the Kubernetes Secret with all HiveMQ licenses.
   # To create a new Kubernetes Secret with licenses, set create=true. Otherwise, false to reuse an existing Secret.
-  name: ""
+  name: "new-license"
   # Inlines the main HiveMQ license as an encoded 64-bytes string.
-  data: ""
+  data: <path:secret/data/hivemq/license#hivemq.lic.b64>
   # Overrides the main HiveMQ license via file using --set-file license.lic.
   overrideLicense: ""
 
