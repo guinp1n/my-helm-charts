@@ -1,0 +1,59 @@
+apiVersion: v1
+entries:
+  hivemq-platform:
+  - annotations:
+      artifacthub.io/signKey: |
+        fingerprint: 62EA05AEB2030F932532F8D96B695D55352A7E7D
+        url: https://www.hivemq.com/public.pgp
+    apiVersion: v2
+    appVersion: 4.35.0
+    created: "2024-12-28T16:43:47.320836+01:00"
+    description: HiveMQ Platform Helm Chart (new)
+    digest: e5ba7f4f7dbd4c46bb7a4c84884f65155b65632411b95aafe890856d0beaec87
+    icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
+    keywords:
+    - HiveMQ
+    - HiveMQ Platform
+    - Broker
+    - MQTT
+    - IoT
+    - Java
+    - distributed
+    - messaging
+    maintainers:
+    - email: support@hivemq.com
+      name: HiveMQ
+    name: hivemq-platform
+    type: application
+    urls:
+    - https://guinp1n.github.io/my-hivemq-helm-charts/hivemq-platform-0.2.31.tgz
+    version: 0.2.31
+  hivemq-platform-operator:
+  - annotations:
+      artifacthub.io/signKey: |
+        fingerprint: 62EA05AEB2030F932532F8D96B695D55352A7E7D
+        url: https://www.hivemq.com/public.pgp
+    apiVersion: v2
+    appVersion: 1.6.2
+    created: "2024-12-28T16:43:47.323683+01:00"
+    description: HiveMQ Platform Operator Helm Chart (new)
+    digest: 94634002576920d8384fdf941a2012e1842754d11b2d9ada3a28c6dc6afa16f0
+    icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
+    keywords:
+    - HiveMQ
+    - HiveMQ Platform Operator
+    - Operator
+    - MQTT
+    - IoT
+    - Java
+    - distributed
+    - messaging
+    maintainers:
+    - email: support@hivemq.com
+      name: HiveMQ
+    name: hivemq-platform-operator
+    type: application
+    urls:
+    - https://guinp1n.github.io/my-hivemq-helm-charts/hivemq-platform-operator-0.2.14.tgz
+    version: 0.2.14
+generated: "2024-12-28T16:43:47.31627+01:00"
