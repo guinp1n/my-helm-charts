@@ -7,9 +7,9 @@ entries:
         url: https://www.hivemq.com/public.pgp
     apiVersion: v2
     appVersion: 4.35.0
-    created: "2024-12-28T16:48:55.840982+01:00"
+    created: "2024-12-28T16:50:16.689135+01:00"
     description: HiveMQ Platform Helm Chart (new)
-    digest: eeef9b049a2ef1660e6832d1af74ae2f94eb41bb66ed3981946a2436678242ea
+    digest: 0bbd1640c9c6f8b079f4db1933ee5e059566e33eeb1007f3c4fd6351ced70657
     icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
     keywords:
     - HiveMQ
@@ -35,9 +35,9 @@ entries:
         url: https://www.hivemq.com/public.pgp
     apiVersion: v2
     appVersion: 1.6.2
-    created: "2024-12-28T16:48:55.842398+01:00"
+    created: "2024-12-28T16:50:16.690593+01:00"
     description: HiveMQ Platform Operator Helm Chart (new)
-    digest: 8bcd36e836fb5c4e6af1caba5136f1f7fd09609839dc1aa42f895c36df35542e
+    digest: 100c3002fac15d692add122740df5d8ea0ee2e61d7001a003c1b7c602b99a87a
     icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
     keywords:
     - HiveMQ
@@ -56,4 +56,4 @@ entries:
     urls:
     - https://guinp1n.github.io/my-hivemq-helm-charts/hivemq-platform-operator-0.2.14.tgz
     version: 0.2.14
-generated: "2024-12-28T16:48:55.836525+01:00"
+generated: "2024-12-28T16:50:16.684061+01:00"
